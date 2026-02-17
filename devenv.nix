@@ -2,6 +2,7 @@
 
 {
   env.PROJECT_NAME = "romancetrends";
+  dotenv.enable = true;
 
   packages = [
     pkgs.git

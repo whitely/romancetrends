@@ -21,28 +21,97 @@ DATA_DIR.mkdir(exist_ok=True)
 OUTPUT_DIR.mkdir(exist_ok=True)
 
 
-# Keyword groups for comparison
+# Keyword groups for comparison (max 5 per group for Google Trends API)
 KEYWORD_GROUPS = {
-    "sports_romance": [
+    # Sports niches
+    "sports_romance_1": [
         "hockey romance",
         "F1 romance",
         "racing romance",
         "baseball romance",
         "football romance",
     ],
-    "trending_tropes": [
+    "sports_romance_2": [
+        "soccer romance",
+        "basketball romance",
+        "MMA romance",
+        "boxing romance",
+        "sports romance",
+    ],
+    # Popular tropes
+    "tropes_1": [
         "enemies to lovers",
         "fake dating romance",
         "grumpy sunshine",
         "forced proximity",
         "second chance romance",
     ],
-    "emerging_settings": [
+    "tropes_2": [
+        "secret baby romance",
+        "forbidden romance",
+        "age gap romance",
+        "one bed trope",
+        "marriage of convenience",
+    ],
+    "tropes_3": [
+        "brother's best friend",
+        "slow burn romance",
+        "friends to lovers",
+        "love triangle",
+        "revenge romance",
+    ],
+    # Settings and subgenres
+    "settings_1": [
         "small town romance",
         "billionaire romance",
         "mafia romance",
         "cowboy romance",
         "office romance",
+    ],
+    "settings_2": [
+        "dark romance",
+        "bully romance",
+        "college romance",
+        "military romance",
+        "rockstar romance",
+    ],
+    "settings_3": [
+        "royal romance",
+        "arranged marriage romance",
+        "bodyguard romance",
+        "boss romance",
+        "single dad romance",
+    ],
+    # Paranormal and fantasy
+    "paranormal": [
+        "shifter romance",
+        "vampire romance",
+        "werewolf romance",
+        "fae romance",
+        "dragon romance",
+    ],
+    "fantasy_scifi": [
+        "fantasy romance",
+        "romantasy",
+        "alien romance",
+        "sci-fi romance",
+        "time travel romance",
+    ],
+    # Historical
+    "historical": [
+        "regency romance",
+        "historical romance",
+        "scottish romance",
+        "viking romance",
+        "western romance",
+    ],
+    # Emerging/niche
+    "emerging": [
+        "why choose romance",
+        "reverse harem",
+        "monster romance",
+        "spicy romance",
+        "booktok romance",
     ],
 }
 

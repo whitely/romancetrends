@@ -46,17 +46,58 @@ OUTPUT_DIR.mkdir(exist_ok=True)
 
 # Search queries for different romance niches
 NICHE_QUERIES = {
+    # Sports
     "hockey_romance": "hockey romance novel",
     "f1_romance": "formula one racing romance",
     "racing_romance": "racing romance novel",
     "sports_romance": "sports romance contemporary",
+    "baseball_romance": "baseball romance novel",
+    "football_romance": "football romance novel",
+    "soccer_romance": "soccer romance novel",
+    "mma_romance": "MMA fighter romance",
+    # Settings
     "small_town_romance": "small town romance novel",
     "billionaire_romance": "billionaire romance",
     "mafia_romance": "mafia romance novel",
     "cowboy_romance": "cowboy western romance",
+    "dark_romance": "dark romance novel",
+    "college_romance": "college romance new adult",
+    "military_romance": "military romance novel",
+    "rockstar_romance": "rockstar musician romance",
+    "royal_romance": "royal prince romance",
+    "office_romance": "office workplace romance",
+    "bodyguard_romance": "bodyguard protector romance",
+    "single_dad_romance": "single dad romance",
+    # Tropes
     "enemies_to_lovers": "enemies to lovers romance",
     "fake_dating": "fake dating romance novel",
     "grumpy_sunshine": "grumpy sunshine romance",
+    "forced_proximity": "forced proximity romance",
+    "second_chance": "second chance romance novel",
+    "secret_baby": "secret baby romance",
+    "forbidden_romance": "forbidden romance novel",
+    "age_gap": "age gap romance novel",
+    "marriage_convenience": "marriage of convenience romance",
+    "friends_to_lovers": "friends to lovers romance",
+    "brothers_best_friend": "brother's best friend romance",
+    "slow_burn": "slow burn romance novel",
+    "why_choose": "why choose reverse harem romance",
+    # Paranormal/Fantasy
+    "shifter_romance": "shifter romance novel",
+    "vampire_romance": "vampire romance novel",
+    "werewolf_romance": "werewolf romance novel",
+    "fae_romance": "fae fantasy romance",
+    "dragon_romance": "dragon shifter romance",
+    "fantasy_romance": "fantasy romance novel",
+    "romantasy": "romantasy novel",
+    "alien_romance": "alien sci-fi romance",
+    "monster_romance": "monster romance novel",
+    # Historical
+    "regency_romance": "regency romance novel",
+    "historical_romance": "historical romance novel",
+    "scottish_romance": "scottish highlander romance",
+    "viking_romance": "viking romance novel",
+    "western_romance": "western frontier romance",
 }
 
 
@@ -95,7 +136,7 @@ def search_books(service, query: str, max_results: int = 40) -> list[dict]:
                 startIndex=start_index,
                 maxResults=min(40, max_results - len(books)),
                 orderBy="relevance",
-                printType="books",
+                printType="BOOKS",
                 langRestrict="en",
             ).execute()
 

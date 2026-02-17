@@ -28,61 +28,70 @@ OUTPUT_DIR = Path(__file__).parent.parent / "output"
 # Keyword mapping between different sources
 # Maps canonical niche names to their variants across data sources
 NICHE_MAPPING = {
-    "hockey_romance": {
-        "google_trends": "hockey romance",
-        "reddit": "hockey",
-        "google_books": "hockey_romance",
-    },
-    "f1_romance": {
-        "google_trends": "F1 romance",
-        "reddit": "f1",
-        "google_books": "f1_romance",
-    },
-    "racing_romance": {
-        "google_trends": "racing romance",
-        "reddit": "racing",
-        "google_books": "racing_romance",
-    },
-    "sports_romance": {
-        "google_trends": "sports romance",
-        "reddit": "sports",
-        "google_books": "sports_romance",
-    },
-    "small_town_romance": {
-        "google_trends": "small town romance",
-        "reddit": "small town",
-        "google_books": "small_town_romance",
-    },
-    "billionaire_romance": {
-        "google_trends": "billionaire romance",
-        "reddit": "billionaire",
-        "google_books": "billionaire_romance",
-    },
-    "enemies_to_lovers": {
-        "google_trends": "enemies to lovers",
-        "reddit": "enemies to lovers",
-        "google_books": "enemies_to_lovers",
-    },
-    "fake_dating": {
-        "google_trends": "fake dating romance",
-        "reddit": "fake dating",
-        "google_books": "fake_dating",
-    },
-    "grumpy_sunshine": {
-        "google_trends": "grumpy sunshine",
-        "reddit": "grumpy sunshine",
-        "google_books": "grumpy_sunshine",
-    },
-    "mafia_romance": {
-        "google_trends": "mafia romance",
-        "reddit": "mafia",
-        "google_books": "mafia_romance",
-    },
-    "cowboy_romance": {
-        "google_trends": "cowboy romance",
-        "reddit": "cowboy",
-        "google_books": "cowboy_romance",
-    },
+    # Sports
+    "hockey_romance": {"google_trends": "hockey romance", "reddit": "hockey", "google_books": "hockey_romance"},
+    "f1_romance": {"google_trends": "F1 romance", "reddit": "f1", "google_books": "f1_romance"},
+    "racing_romance": {"google_trends": "racing romance", "reddit": "racing", "google_books": "racing_romance"},
+    "sports_romance": {"google_trends": "sports romance", "reddit": "sports", "google_books": "sports_romance"},
+    "baseball_romance": {"google_trends": "baseball romance", "reddit": "baseball", "google_books": "baseball_romance"},
+    "football_romance": {"google_trends": "football romance", "reddit": "football", "google_books": "football_romance"},
+    "soccer_romance": {"google_trends": "soccer romance", "reddit": "soccer", "google_books": "soccer_romance"},
+    "mma_romance": {"google_trends": "MMA romance", "reddit": "mma", "google_books": "mma_romance"},
+    "boxing_romance": {"google_trends": "boxing romance", "reddit": "boxing", "google_books": None},
+    "basketball_romance": {"google_trends": "basketball romance", "reddit": "basketball", "google_books": None},
+    # Settings
+    "small_town_romance": {"google_trends": "small town romance", "reddit": "small town", "google_books": "small_town_romance"},
+    "billionaire_romance": {"google_trends": "billionaire romance", "reddit": "billionaire", "google_books": "billionaire_romance"},
+    "mafia_romance": {"google_trends": "mafia romance", "reddit": "mafia", "google_books": "mafia_romance"},
+    "cowboy_romance": {"google_trends": "cowboy romance", "reddit": "cowboy", "google_books": "cowboy_romance"},
+    "dark_romance": {"google_trends": "dark romance", "reddit": "dark romance", "google_books": "dark_romance"},
+    "college_romance": {"google_trends": "college romance", "reddit": "college", "google_books": "college_romance"},
+    "military_romance": {"google_trends": "military romance", "reddit": "military", "google_books": "military_romance"},
+    "rockstar_romance": {"google_trends": "rockstar romance", "reddit": "rockstar", "google_books": "rockstar_romance"},
+    "royal_romance": {"google_trends": "royal romance", "reddit": "royal", "google_books": "royal_romance"},
+    "office_romance": {"google_trends": "office romance", "reddit": "office", "google_books": "office_romance"},
+    "bodyguard_romance": {"google_trends": "bodyguard romance", "reddit": "bodyguard", "google_books": "bodyguard_romance"},
+    "single_dad_romance": {"google_trends": "single dad romance", "reddit": "single dad", "google_books": "single_dad_romance"},
+    "bully_romance": {"google_trends": "bully romance", "reddit": "bully", "google_books": None},
+    "boss_romance": {"google_trends": "boss romance", "reddit": "boss", "google_books": None},
+    # Tropes
+    "enemies_to_lovers": {"google_trends": "enemies to lovers", "reddit": "enemies to lovers", "google_books": "enemies_to_lovers"},
+    "fake_dating": {"google_trends": "fake dating romance", "reddit": "fake dating", "google_books": "fake_dating"},
+    "grumpy_sunshine": {"google_trends": "grumpy sunshine", "reddit": "grumpy sunshine", "google_books": "grumpy_sunshine"},
+    "forced_proximity": {"google_trends": "forced proximity", "reddit": "forced proximity", "google_books": "forced_proximity"},
+    "second_chance": {"google_trends": "second chance romance", "reddit": "second chance", "google_books": "second_chance"},
+    "secret_baby": {"google_trends": "secret baby romance", "reddit": "secret baby", "google_books": "secret_baby"},
+    "forbidden_romance": {"google_trends": "forbidden romance", "reddit": "forbidden", "google_books": "forbidden_romance"},
+    "age_gap": {"google_trends": "age gap romance", "reddit": "age gap", "google_books": "age_gap"},
+    "marriage_convenience": {"google_trends": "marriage of convenience", "reddit": "marriage of convenience", "google_books": "marriage_convenience"},
+    "friends_to_lovers": {"google_trends": "friends to lovers", "reddit": "friends to lovers", "google_books": "friends_to_lovers"},
+    "brothers_best_friend": {"google_trends": "brother's best friend", "reddit": "brother's best friend", "google_books": "brothers_best_friend"},
+    "slow_burn": {"google_trends": "slow burn romance", "reddit": "slow burn", "google_books": "slow_burn"},
+    "one_bed": {"google_trends": "one bed trope", "reddit": "one bed", "google_books": None},
+    "love_triangle": {"google_trends": "love triangle", "reddit": "love triangle", "google_books": None},
+    "revenge_romance": {"google_trends": "revenge romance", "reddit": "revenge", "google_books": None},
+    "why_choose": {"google_trends": "why choose romance", "reddit": "why choose", "google_books": "why_choose"},
+    # Paranormal/Fantasy
+    "shifter_romance": {"google_trends": "shifter romance", "reddit": "shifter", "google_books": "shifter_romance"},
+    "vampire_romance": {"google_trends": "vampire romance", "reddit": "vampire", "google_books": "vampire_romance"},
+    "werewolf_romance": {"google_trends": "werewolf romance", "reddit": "werewolf", "google_books": "werewolf_romance"},
+    "fae_romance": {"google_trends": "fae romance", "reddit": "fae", "google_books": "fae_romance"},
+    "dragon_romance": {"google_trends": "dragon romance", "reddit": "dragon", "google_books": "dragon_romance"},
+    "fantasy_romance": {"google_trends": "fantasy romance", "reddit": "fantasy", "google_books": "fantasy_romance"},
+    "romantasy": {"google_trends": "romantasy", "reddit": "romantasy", "google_books": "romantasy"},
+    "alien_romance": {"google_trends": "alien romance", "reddit": "alien", "google_books": "alien_romance"},
+    "monster_romance": {"google_trends": "monster romance", "reddit": "monster", "google_books": "monster_romance"},
+    "time_travel": {"google_trends": "time travel romance", "reddit": "time travel", "google_books": None},
+    # Historical
+    "regency_romance": {"google_trends": "regency romance", "reddit": "regency", "google_books": "regency_romance"},
+    "historical_romance": {"google_trends": "historical romance", "reddit": "historical", "google_books": "historical_romance"},
+    "scottish_romance": {"google_trends": "scottish romance", "reddit": "scottish", "google_books": "scottish_romance"},
+    "viking_romance": {"google_trends": "viking romance", "reddit": "viking", "google_books": "viking_romance"},
+    "western_romance": {"google_trends": "western romance", "reddit": "western", "google_books": "western_romance"},
+    # Emerging
+    "reverse_harem": {"google_trends": "reverse harem", "reddit": "reverse harem", "google_books": None},
+    "spicy_romance": {"google_trends": "spicy romance", "reddit": "spicy", "google_books": None},
+    "booktok_romance": {"google_trends": "booktok romance", "reddit": "booktok", "google_books": None},
 }
 
 
@@ -335,9 +344,9 @@ def generate_report(df: pd.DataFrame) -> str:
     # Data availability note
     report.append("\n\nDATA SOURCES:")
     report.append("-" * 50)
-    has_trends = df["trends_growth"].notna().any()
-    has_reddit = df["reddit_growth"].notna().any()
-    has_books = df["books_growth"].notna().any()
+    has_trends = "trends_growth" in df.columns and df["trends_growth"].notna().any()
+    has_reddit = "reddit_growth" in df.columns and df["reddit_growth"].notna().any()
+    has_books = "books_growth" in df.columns and df["books_growth"].notna().any()
     report.append(f"  Google Trends: {'Available' if has_trends else 'Run: python src/google_trends.py'}")
     report.append(f"  Reddit: {'Available' if has_reddit else 'Run: python src/reddit_analysis.py'}")
     report.append(f"  Google Books: {'Available' if has_books else 'Run: python src/google_books.py'}")
