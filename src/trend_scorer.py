@@ -92,6 +92,17 @@ NICHE_MAPPING = {
     "reverse_harem": {"google_trends": "reverse harem", "reddit": "reverse harem", "google_books": None},
     "spicy_romance": {"google_trends": "spicy romance", "reddit": "spicy", "google_books": None},
     "booktok_romance": {"google_trends": "booktok romance", "reddit": "booktok", "google_books": None},
+    # Additional niches
+    "queer_romance": {"google_trends": "queer romance", "reddit": "queer", "google_books": "queer_romance"},
+    "cozy_romance": {"google_trends": "cozy romance", "reddit": "cozy", "google_books": "cozy_romance"},
+    "ghost_romance": {"google_trends": "ghost romance", "reddit": "ghost", "google_books": "ghost_romance"},
+    "academic_romance": {"google_trends": "academic romance", "reddit": "academic", "google_books": "academic_romance"},
+    "sapphic_romance": {"google_trends": "sapphic romance", "reddit": "sapphic", "google_books": "sapphic_romance"},
+    "mm_romance": {"google_trends": "mm romance", "reddit": "mm", "google_books": "mm_romance"},
+    "ff_romance": {"google_trends": "ff romance", "reddit": "ff", "google_books": None},
+    "lgbtq_romance": {"google_trends": "lgbtq romance", "reddit": "lgbtq", "google_books": None},
+    "haunted_romance": {"google_trends": "haunted romance", "reddit": "haunted", "google_books": "haunted_romance"},
+    "professor_romance": {"google_trends": "professor romance", "reddit": "professor", "google_books": None},
 }
 
 

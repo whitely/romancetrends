@@ -113,6 +113,21 @@ KEYWORD_GROUPS = {
         "spicy romance",
         "booktok romance",
     ],
+    # Additional niches
+    "additional_1": [
+        "queer romance",
+        "cozy romance",
+        "ghost romance",
+        "academic romance",
+        "sapphic romance",
+    ],
+    "additional_2": [
+        "mm romance",
+        "ff romance",
+        "lgbtq romance",
+        "haunted romance",
+        "professor romance",
+    ],
 }
 
 

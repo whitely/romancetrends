@@ -98,6 +98,14 @@ NICHE_QUERIES = {
     "scottish_romance": "scottish highlander romance",
     "viking_romance": "viking romance novel",
     "western_romance": "western frontier romance",
+    # Additional niches
+    "queer_romance": "queer lgbtq romance novel",
+    "cozy_romance": "cozy romance novel",
+    "ghost_romance": "ghost paranormal romance",
+    "academic_romance": "academic professor romance",
+    "sapphic_romance": "sapphic wlw romance",
+    "mm_romance": "mm gay romance novel",
+    "haunted_romance": "haunted house romance",
 }
 
 

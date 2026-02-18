@@ -61,3 +61,34 @@
 
   The data strongly supports sports romance (especially non-hockey like racing/boxing/soccer) and historical subniches (viking/scottish) as the biggest opportunities - high search growth with declining publishing velocity.
 
+
+ Key observations from the new additions:
+
+  Publishing Velocity Growth (Google Books):
+
+  | Rank | Niche            | Growth | Category      |
+  |------|------------------|--------|---------------|
+  | 1    | Grumpy Sunshine  | +1260% | Trope         |
+  | 2    | Monster Romance  | +980%  | Paranormal    |
+  | 3    | Forced Proximity | +713%  | Trope         |
+  | 4    | Cozy Romance     | +400%  | NEW - Setting |
+  | 5    | Fake Dating      | +241%  | Trope         |
+  | 6    | Fae Romance      | +218%  | Fantasy       |
+  | 7    | Sapphic Romance  | +147%  | NEW - LGBTQ+  |
+
+  New Niche Insights:
+
+  | Niche            | Publishing   | Interpretation                                                           |
+  |------------------|--------------|--------------------------------------------------------------------------|
+  | Cozy Romance     | +400%        | Publishers flooding this space - BookTok driven comfort reads            |
+  | Sapphic Romance  | +147%        | Strong growth in WLW content                                             |
+  | Haunted Romance  | +17%         | Small but growing                                                        |
+  | Ghost Romance    | -16%         | Stable paranormal niche                                                  |
+  | Queer/MM Romance | -41% to -43% | Declining velocity (may be saturated or consolidated under other labels) |
+  | Academic Romance | N/A          | Too few recent releases to measure                                       |
+
+  Bottom line: Cozy romance is the sleeper hit among your new additions - massive publisher interest suggests it's the next big comfort-read trend after "grumpy sunshine."
+
+  When Google Trends resets (usually a few hours), run trends --group additional_1 and trends --group additional_2 to get the search demand data for these new niches.
+
+
